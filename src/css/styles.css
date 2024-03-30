@@ -1,0 +1,41 @@
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+
+:root{
+  --transition-delay: 1.2s;
+}
+
+html,body{
+    background-image: url("../assets/Hero-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: auto;
+
+}
+
+span:hover{
+  cursor: pointer;
+
+}
+
+button{
+  animation:  var(--transition-delay) pulse infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
