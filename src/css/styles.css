@@ -9,7 +9,7 @@
   --transition-delay: 1.2s;
 }
 
-html,body{
+body, html{
     background-image: url("../assets/Hero-background.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,6 +21,10 @@ html,body{
 span:hover{
   cursor: pointer;
 
+}
+
+a:hover{
+  transition-duration: 1s;
 }
 
 button{
