@@ -13,7 +13,7 @@
         <div x-data="Data()" x-init="Start()">
             <nav class="py-6 ">
                 <div class="flex justify-between">
-                 <div class="flex flex-row gap-3 mx-3 items-center">
+                 <div class="flex flex-row gap-3 mx-3">
                      <img class="w-10 h-10 md:w-9 rounded-full" src="./src/assets/logo.png"/>
                      <a href="/Homepage.html" class="text-white font-bold "> ART COLLAB</a>
                  </div>
@@ -35,37 +35,28 @@
                          </li>
                          <div class="flex flex-col lg:flex-row">
                             <li>
-                                <div class="border-slate-100 border-solid border-2 h-9 flex rounded-md mr-3 mb-3 md:mb-3 lg:mb-0">
-                                  <input class=" bg-transparent  text-sm mx-2" placeholder="Buscar libros"/> 
-                                  <span class="material-symbols-outlined text-white text-xl mx-2">search</span>
+                                <div class="border-slate-100 border-solid border-2  flex rounded-md">
+                                   <input class=" bg-transparent  text-sm mx-2" placeholder="Buscar libros"/>
+                                   <span class="material-symbols-outlined pt-1 text-white text-xl mx-2">search </span>
                                 </div>
                                 
                              </li>
                              <li>
-                                <input class=" bg-transparent text-white border-slate-100 border-solid border-2 text-sm w-24 h-9 rounded-md" type="button" value="Inicia Sesion"/> 
+                                <input class=" bg-transparent text-white border-slate-100 border-solid border-2 text-sm w-24 h-9 rounded-md" type="button" value="Inicia Sesion"/>
                              </li>
                              <li >
-                                <input class="bg-white text-sm w-24 h-9 mx-3  rounded-md" type="button" value="Registrate"/> 
+                                <input class="bg-white text-sm w-24 h-9 mx-3  rounded-md" type="button" value="Registrate"/>
                              </li>
                          </div>
                      </ul>
                     </div>
                   </div>
                  </div>
-                </div>
-             </nav>
+            </nav>
         </div>
-        <div  class="flex justify-between relative h-full">
-            <div class="pt-10 mx-10 flex flex-col gap-5"> 
-                <h1 class="text-xl font-bold sm:text-3xl md:text-4xl lg:text-6xl text-white"> INSPIRA, </h1>
-                <h1 class="text-xl font-bold sm:text-3xl md:text-4xl lg:text-6xl text-white"> CREA, </h1>
-                <h1 class="text-xl font-bold sm:text-3xl  md:text-4xl lg:text-6xl text-white"> COLABORA. </h1>
-                <button class=" text-xs md:text-sm bg-blue-400 w-48 text-black absolute top-44 sm:top-48 md:top-52 lg:top-72 h-12 sm:w-46 md:w-64 lg:w-72  rounded-full">Unete a nuestra comunidad </button>
-            </div>
-            <div class="absolute right-2 top-0 ">
-                <img src="./src/assets/Hero-image.png" alt="hero" class=" w-64 sm:w-96 md:w-full"/>
-            </div>
-        </div>
+
+
+
       
 
    <script src="./src/js/index.js"></script>
