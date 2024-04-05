@@ -18,35 +18,37 @@
                      <img class="w-10 h-10 md:w-9 rounded-full" src="./src/assets/logo.png"/>
                      <a href="/Homepage.html" class="text-white font-bold"> ART COLLAB</a>
                  </div>
-                  <div class="flex gap-5 flex-col justify-center items-center lg:flex-row">
-                     <span class="material-symbols-outlined text-white w-10 scale-125 hover:text-orange-400  lg:hidden" @click="SetToggle()"> menu </span>
+                  <div class="flex gap-4 flex-col justify-center items-center lg:flex-row">
+                     <span class="material-symbols-outlined  text-white mx-5 scale-125 hover:text-orange-400  lg:hidden" @click="SetToggle()"> menu </span>
                     <div class=" lg:block" x-show="GetToggle()" @resize.window="toggle = window.outerWidth > 1024 ? true : false">
-                     <ul class="flex justify-center flex-wrap flex-col gap-3 text-center lg:flex-row lg:gap-0">
-                         <li class="mr-6">
+                     <ul class="flex flex-wrap flex-col gap-6 text-center lg:flex-row ">
+                         <li >
                              <a href="#" class="text-white hover:text-orange-400">Artistas</a>
                          </li>
-                         <li class="mr-6">
+                         <li >
                              <a href="#" class="text-white hover:text-orange-400">Libros</a>
                          </li>
-                         <li class="mr-6">
+                         <li >
                              <a href="#" class="text-white hover:text-orange-400">Colabora</a>
                          </li>
-                         <li class="mr-6">
+                         <li >
                              <a href="#" class="text-white hover:text-orange-400">Premium</a>
                          </li>
-                         <li class="mr-6">
-                            <div class="border-slate-100 border-solid border-2 w-44 h-9  flex rounded-md">
-                              <input class=" bg-transparent  text-sm mx-2" placeholder="Buscar libros"/> 
-                               <span class="material-symbols-outlined pt-1 text-white text-xl mx-2">search </span>
-                            </div>
-                            
-                         </li>
-                         <li class="mr-6">
-                            <input class=" bg-transparent text-white border-slate-100 border-solid border-2  text-sm w-24 h-9 rounded-md" type="button" value="Inicia Sesion"/> 
-                         </li>
-                         <li class="mr-6">
-                            <input class="bg-white text-sm w-24 h-9 rounded-md" type="button" value="Registrate"/> 
-                         </li>
+                         <div class="flex flex-col lg:flex-row gap-3">
+                            <li>
+                                <div class="border-slate-100 border-solid border-2 w-44 h-9  flex rounded-md">
+                                  <input class=" bg-transparent  text-sm mx-2" placeholder="Buscar libros"/> 
+                                   <span class="material-symbols-outlined pt-1 text-white text-xl mx-2">search </span>
+                                </div>
+                                
+                             </li>
+                             <li>
+                                <input class=" bg-transparent text-white border-slate-100 border-solid border-2  text-sm w-24 h-9 rounded-md" type="button" value="Inicia Sesion"/> 
+                             </li>
+                             <li>
+                                <input class="bg-white text-sm w-24 h-9 mx-3 rounded-md" type="button" value="Registrate"/> 
+                             </li>
+                         </div>
                      </ul>
                     </div>
                   </div>
