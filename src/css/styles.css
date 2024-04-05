@@ -14,28 +14,9 @@ html,body{
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
-    height: auto;
+    height: 100vh;
 
 }
 
-span:hover{
-  cursor: pointer;
 
-}
-
-button{
-  animation:  var(--transition-delay) pulse infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 
