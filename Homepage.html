@@ -13,7 +13,7 @@
         <div x-data="Data()" x-init="Start()">
             <nav class="py-6 ">
                 <div class="flex justify-between">
-                 <div class="flex flex-col sm:flex-row gap-3 mx-3">
+                 <div class="flex flex-row gap-3 mx-3">
                      <img class="w-10 h-10 md:w-9 rounded-full" src="./src/assets/logo.png"/>
                      <a href="/Homepage.html" class="text-white font-bold"> ART COLLAB</a>
                  </div>
@@ -55,20 +55,17 @@
                 </div>
              </nav>
         </div>
-
-        <section class=" text-white pt-20">
-          <div class="mx-auto flex flex-col justify-center  sm:flex-row sm:justify-between ">
-                <div class="flex flex-col items-center sm:items-start gap-4 ">
-                    <h1 class=" text-2xl mx-6 sm:text-2xl md:text-4xl  lg:text-7xl font-bold ">INSPIRA, </h1>
-                    <h1  class="text-2xl mx-6 sm:text-2xl md:text-4xl  lg:text-7xl font-bold" > CREA, </h1>
-                    <h1  class="text-2xl mx-6 sm:text-2xl md:text-4xl  lg:text-7xl font-bold" > COLABORA, </h1>
-                    <button class=" text-xs h-12 w-28 sm:w-40 md:text-base  md:w-56 lg:w-80  mr-8 md:h-16 ml-4 sm:ml-8  md:ml-9 bg-sky-200 text-black font-bold rounded-full">Únete a nuestra comunidad</button>
-                </div>
-                <div class=" pt-12 mr-16 sm:mr-0 sm:w-1/2 sm:pt-0">
-                    <img src="src/assets/Hero-image.png">
-                  </div>
-          </div>
-      </section>
+        <div  class="flex justify-between relative h-full">
+            <div class="pt-10 mx-10 flex flex-col gap-5"> 
+                <h1 class="text-xl font-bold sm:text-3xl md:text-4xl lg:text-6xl text-white"> INSPIRA, </h1>
+                <h1 class="text-xl font-bold sm:text-3xl md:text-4xl lg:text-6xl text-white"> CREA, </h1>
+                <h1 class="text-xl font-bold sm:text-3xl  md:text-4xl lg:text-6xl text-white"> COLABORA. </h1>
+                <button class=" text-xs md:text-sm bg-blue-400 w-48 text-black absolute top-44 sm:top-48 md:top-52 lg:top-72 h-12 sm:w-46 md:w-64 lg:w-72  rounded-full">Unete a nuestra comunidad </button>
+            </div>
+            <div class="absolute right-2 top-0 ">
+                <img src="./src/assets/Hero-image.png" alt="hero" class=" w-64 sm:w-96 md:w-full"/>
+            </div>
+        </div>
       
 
    <script src="./src/js/index.js"></script>
