@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./src/css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Art Collab</title>
@@ -17,10 +18,10 @@
                      <img class="w-10 h-10 md:w-9 rounded-full" src="./src/assets/logo.png"/>
                      <a href="/Homepage.html" class="text-white font-bold"> ART COLLAB</a>
                  </div>
-                  <div class="flex gap-5 flex-col justify-center items-center md:flex-row">
-                     <span class="material-symbols-outlined text-white w-10 scale-125 hover:text-orange-400 md:hidden" @click="SetToggle()"> menu </span>
-                    <div class=" md:block" x-show="GetToggle()" @resize.window="toggle = window.outerWidth > 845 ? true : false">
-                     <ul class="flex justify-center flex-wrap flex-col gap-3 text-center md:flex-row md:gap-0">
+                  <div class="flex gap-5 flex-col justify-center items-center lg:flex-row">
+                     <span class="material-symbols-outlined text-white w-10 scale-125 hover:text-orange-400  lg:hidden" @click="SetToggle()"> menu </span>
+                    <div class=" lg:block" x-show="GetToggle()" @resize.window="toggle = window.outerWidth > 1024 ? true : false">
+                     <ul class="flex justify-center flex-wrap flex-col gap-3 text-center lg:flex-row lg:gap-0">
                          <li class="mr-6">
                              <a href="#" class="text-white hover:text-orange-400">Artistas</a>
                          </li>
@@ -34,7 +35,17 @@
                              <a href="#" class="text-white hover:text-orange-400">Premium</a>
                          </li>
                          <li class="mr-6">
-                            <input class="bg-white font text-sm w-24 h-9 rounded-md" type="button" value="Registrate"/> 
+                            <div class="border-slate-100 border-solid border-2 w-44 h-9  flex rounded-md">
+                              <input class=" bg-transparent text-white text-sm mx-2" value="Buscar libros"/> 
+                               <span class="material-symbols-outlined pt-1 text-white text-xl mx-2">search </span>
+                            </div>
+                            
+                         </li>
+                         <li class="mr-6">
+                            <input class=" bg-transparent text-white border-slate-100 border-solid border-2  text-sm w-24 h-9 rounded-md" type="button" value="Inicia Sesion"/> 
+                         </li>
+                         <li class="mr-6">
+                            <input class="bg-white text-sm w-24 h-9 rounded-md" type="button" value="Registrate"/> 
                          </li>
                      </ul>
                     </div>
@@ -48,7 +59,7 @@
           <div class="mx-auto flex justify-between">
                 <div class="flex flex-col gap-10">
                     <h1 class="  text-2xl mx-6 sm:text-4xl md:text-5xl  lg:text-7xl font-bold tracking-wider md:tracking-widest">INSPIRA, CREA, COLABORA</h1>
-                    <button class=" text-xs  w-30 md:text-base sm:w-42 md:w-80 h-12 mr-8 md:h-16 ml-4 sm:ml-8  md:ml-9 bg-sky-200 text-black font-bold rounded-full">Únete a nuestra comunidad</button>
+                    <button class=" text-xs w-36 md:text-base sm:w-42 md:w-80 h-12 mr-8 md:h-16 ml-4 sm:ml-8  md:ml-9 bg-sky-200 text-black font-bold rounded-full">Únete a nuestra comunidad</button>
                 </div>
                   <div>
                     <img src="src/assets/Hero-image.png">
