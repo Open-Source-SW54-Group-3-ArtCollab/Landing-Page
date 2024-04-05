@@ -23,6 +23,11 @@ span:hover{
 
 }
 
+input[type=button]:hover{
+  cursor: pointer;
+  transform: scale(1.07);
+}
+
 a:hover{
   transition-duration: 1s;
 }
