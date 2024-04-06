@@ -5,18 +5,5 @@
   overflow-y: hidden;
 }
 
-:root{
-  --transition-delay: 1.2s;
-}
-
-html,body{
-    background-image: url("../assets/Hero-background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: auto;
-    height: 100vh;
-
-}
-
 
 
