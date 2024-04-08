@@ -14,12 +14,6 @@
   width: 100%;
 }
 @media(max-width: 991px){
-  .h1{
-      font-size: 24px;
-  }
-  .h4{
-      font-size: 18px;
-  }
   body{
       min-height: 0vh;
   }
