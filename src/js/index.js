@@ -1,9 +1,9 @@
 function Data(){
     return {
-        toggle: window.innerWidth > 845, // Inicializar toggle basado en el ancho de la ventana
+        toggle: window.innerWidth > 1024, // Inicializar toggle basado en el ancho de la ventana
 
         Start() {
-            if (window.innerWidth <= 845) { // Si la pantalla es menor o igual a 768px
+            if (window.innerWidth <= 1024) { 
                 this.toggle = false; // Sobrescribir toggle a false
             }
         },

@@ -9,18 +9,28 @@
   --transition-delay: 1.2s;
 }
 
-html,body{
+
+
+body, html{
     background-image: url("../assets/Hero-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
-    height: auto;
+    height: 100vh;
 
 }
 
-span:hover{
+a,span:hover{
   cursor: pointer;
+  transition-duration: var(--transition-delay);
 
+}
+
+input[type="button"]:hover{
+    cursor: pointer;
+    border-width: 0;
+    transform: scale(1.1);
+    transition-duration: var(--transition-delay);
 }
 
 button{
