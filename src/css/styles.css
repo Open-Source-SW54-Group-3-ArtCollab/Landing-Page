@@ -1,51 +1,66 @@
-*{
-  padding:0;
-  margin: 0;
-  box-sizing: border-box;
-  overflow-y: hidden;
+.books {
+  padding: 50px 0 150px 0;
+  ;
 }
 
-:root{
-  --transition-delay: 1.2s;
+.swiper {
+  width: 100%;
 }
 
 
 
-body, html{
-    background-image: url("../assets/Hero-background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: auto;
-    height: 100vh;
+body,
+html {
+  background-image: url("../assets/Hero-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 100vh;
 
 }
 
-a,span:hover{
+a,
+span:hover {
   cursor: pointer;
   transition-duration: var(--transition-delay);
 
 }
 
-input[type="button"]:hover{
-    cursor: pointer;
-    border-width: 0;
-    transform: scale(1.1);
-    transition-duration: var(--transition-delay);
+input[type="button"]:hover {
+  cursor: pointer;
+  border-width: 0;
+  transform: scale(1.1);
+  transition-duration: var(--transition-delay);
 }
 
-button{
-  animation:  var(--transition-delay) pulse infinite;
+button {
+  animation: var(--transition-delay) pulse infinite;
 }
 
 @keyframes pulse {
   0% {
     transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 280px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+
+    @media(max-width: 991px) {
+      body {
+        min-height: 0vh;
+      }
+
+      .books {
+        padding: 30px;
+      }
+
+    }
   }
 }
-
