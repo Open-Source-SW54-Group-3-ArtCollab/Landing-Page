@@ -20,10 +20,65 @@
 </head>
 
 <body>
-  <div
-    style="background-image: url('src/assets/Descubre.png'); width: auto; height: auto; background-repeat: no-repeat; background-size:cover;">
-    <h1 class="font-extrabold text-5xl text-right md:text-7xl">Explora Y</h1>
-    <h1 class="font-extrabold text-5xl text-right md:text-7xl">Descubre</h1>
+  <div x-data="Data()" x-init="Start()">
+    <nav class="py-8 ">
+        <div class="flex justify-between">
+        <div class="flex gap-3 mx-3 flex-col sm:flex-row">
+            <img class="w-10 h-10 md:w-9 rounded-full" src="./src/assets/logo.png"/>
+            <a  class="text-white text-xs sm:text-base font-bold"> ART COLLAB</a>
+        </div>
+        <div class="flex gap-5 text-xs sm:text-base flex-col justify-center items-center md:flex-row">
+            <span class="material-symbols-outlined text-white w-10 scale-125 hover:text-orange-400 md:hidden" @click="SetToggle()"> menu </span>
+            <div class=" md:block" x-show="GetToggle()" @resize.window="toggle = window.outerWidth > 768 ? true : false">
+            <ul class="flex justify-center flex-wrap flex-col gap-3 text-center md:flex-row md:gap-0">
+                <li class="mr-6">
+                    <a href="#" class="text-white hover:text-orange-400">Artistas</a>
+                </li>
+                <li class="mr-6">
+                    <a href="#" class="text-white hover:text-orange-400">Libros</a>
+                </li>
+                <li class="mr-6">
+                    <a href="#" class="text-white hover:text-orange-400">Colabora</a>
+                </li>
+                <li class="mr-6">
+                    <a href="#" class="text-white hover:text-orange-400">Premium</a>
+                </li>
+                <div class="flex flex-col lg:flex-row gap-2 lg:gap-0">
+                  <li>
+                      <div class="border-slate-100 border-solid border-2 h-9 flex rounded-md mr-3 mb-3 md:mb-3 lg:mb-0">
+                        <input class=" bg-transparent  text-sm mx-2" placeholder="Buscar libros"/> 
+                        <span class="material-symbols-outlined text-white text-xl mx-2">search</span>
+                      </div>
+                      
+                   </li>
+                   <li>
+                     <a  href="./Login.html">  <input class=" hover:cursor-pointer hover:scale-110 bg-transparent text-white border-slate-100 border-solid border-2 text-sm w-24 h-9 rounded-md" type="button" value="Inicia Sesion"/> </a> 
+                   </li>
+                   <li >
+                    <a  href="./Login.html"> <input  class="bg-white text-sm w-24 h-9 mx-3 hover:cursor-pointer hover:scale-110  rounded-md" type="button" value="Registrate"/> </a>
+                   </li>
+               </div>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+        </div>
+<div  class=" pt-7 sm:pt-16 hero-container flex justify-between overflow-x-hidden  relative">
+    <div class="flex flex-col gap-5"> 
+        <h1 class="text-xl font-bold sm:text-3xl md:text-4xl lg:text-6xl text-white"> INSPIRA, </h1>
+        <h1 class="text-xl font-bold sm:text-3xl md:text-4xl lg:text-6xl text-white"> CREA, </h1>
+        <h1 class="text-xl font-bold sm:text-3xl  md:text-4xl lg:text-6xl text-white"> COLABORA. </h1>
+        <button class=" text-xs md:text-sm bg-blue-400 w-26 text-black h-9  sm:h-14  sm:w-64 md:w-64 lg:w-72  rounded-full">Unete a nuestra comunidad </button>
+    </div>
+    <div>
+        <img src="./src/assets/Hero-image.png" alt="hero" class=" w-80 h-72 scale-125 sm:scale-100  md:h-full  md:w-full"/>
+    </div>
+</div>
+  <div 
+    style="background-image: url('src/assets/Descubre.png'); height:auto;  background-repeat: no-repeat; background-size:cover;">
+    <h1 class="font-extrabold text-3xl sm:text-5xl text-right md:text-7xl">Explora Y</h1>
+    <h1 class="font-extrabold text-3xl sm:text-5xl text-right md:text-7xl">Descubre</h1>
     <br>
     <h4 class="font-bold text-2xl text-right md:text-4xl">nuestro cátalogo de libros y artistas</h4>
     <br>
@@ -31,32 +86,33 @@
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
 
+
           <div class="swiper-slide">
-            <img src="src/assets/DiarioCover1.png" alt="">
+            <img src="src/assets/DiarioCover1.png" alt="Diario-Cover1">
           </div>
           <div class="swiper-slide">
-            <img src="src/assets/HierbaCover1.png" alt="">
+            <img src="src/assets/HierbaCover1.png" alt="Hierba-Cover1">
           </div>
           <div class="swiper-slide">
-            <img src="src/assets/HistoriasCover1.png" alt="">
+            <img src="src/assets/HistoriasCover1.png" alt="Historias-Cover1">
           </div>
           <div class="swiper-slide">
-            <img src="src/assets/PeterCover1.png" alt="">
+            <img src="src/assets/PeterCover1.png" alt="Pter-Cover1">
           </div>
           <div class="swiper-slide">
-            <img src="src/assets/PrincipitoCover1.png" alt="">
+            <img src="src/assets/PrincipitoCover1.png" alt="Pepito-Cover1">
           </div>
           <div class="swiper-slide">
-            <img src="src/assets/HierbaCover1.png" alt="">
+            <img src="src/assets/HierbaCover1.png" alt="Hierba-Cover1">
           </div>
           <div class="swiper-slide">
-            <img src="src/assets/PeterCover1.png" alt="">
+            <img src="src/assets/PeterCover1.png" alt="Pter-Cover-1">
           </div>
           <div class="swiper-slide">
-            <img src="src/assets/DiarioCover1.png" alt="">
+            <img src="src/assets/DiarioCover1.png" alt="Diario-Cover-1">
           </div>
           <div class="swiper-slide">
-            <img src="src/assets/HistoriasCover1.png" alt="">
+            <img src="src/assets/HistoriasCover1.png" alt="Historias-Cover-1">
           </div>
         </div>
       </div>
@@ -81,59 +137,56 @@
     <script src="src/js/index.js"></script>
   </div>
 
-  <div class="w-full h-full bg-no-repeat bg-cover bg-center overflow-hidden"
+
+    <div class="w-full h-full bg-no-repeat bg-cover bg-center overflow-hidden"
     style="background-image:url(./src/assets/COLABORA-background.png);">
-    <div class="mx-3 my-2 space-y-4">
-      <h2 class="text-7xl font-bold ">COLABORA</h2>
-      <h2 class="text-7xl font-bold">CON OTROS</h2>
-      <h2 class="text-7xl font-bold">ARTISTAS</h2>
-      <h3 class="text-4xl font-bold">y crea historias que cambiarán vidas</h3>
-    </div>
-
-    <div class="flex justify-center items-center mt-16">
-      <img src="./src/assets/COLABORA-chat.PNG" alt="chat with an artist"
-        class=" w-1/2 md:w-1/2 lg:w-1/3 rounded-lg drop-shadow-[0_10px_10px_rgba(0,0,0,0.20)]">
-    </div>
-
-    <div class="flex flex-col items-center my-16">
-      <button
-        class="text-lg text-black font-semibold bg-orange-600 mb-40 h-20 w-80 rounded-full transition-transform duration-500 transform hover:scale-110">Descubre
-        cómo</button>
-
+        <div class="mx-3 my-2 space-y-4">
+            <h2 class=" text-4xl md:text-7xl font-bold ">COLABORA</h2>
+            <h2 class=" text-4xl md:text-7xl font-bold">CON OTROS</h2>
+            <h2 class=" text-4xl md:text-7xl font-bold">ARTISTAS</h2>
+            <h3 class=" text-4xl md:text-4xl font-bold">y crea historias que cambiarán vidas</h3>
+        </div>
+     
+        <div class="flex justify-center items-center mt-16">
+            <img src="./src/assets/COLABORA-chat.PNG" alt="chat with an artist" class=" w-1/2 md:w-1/2 lg:w-1/3 rounded-lg drop-shadow-[0_10px_10px_rgba(0,0,0,0.20)]">
+        </div>        
+    
+        <div class="flex flex-col items-center my-16">
+            <button class="text-lg text-black font-semibold bg-orange-600 mb-40 h-20 w-56 sm:w-80 rounded-full transition-transform duration-500 transform hover:scale-110">Descubre cómo</button>
+        </div>
     </div>
     <footer class=" flex flex-col gap-7 bg-cyan-950 py-6 ">
-      <ul class="footer-links flex flex-col md:flex-row gap-7 mx-10">
-        <li class=" text-xs text-slate-200 "> ARTISTAS</li>
-        <li class=" text-xs text-slate-200 "> LIBRO</li>
-        <li class=" text-xs text-slate-200 "> COLABORA </li>
-        <li class=" text-xs text-slate-200 "> NOSOTROS </li>
+      <ul class="flex flex-col md:flex-row gap-7 mx-10 hover:cursor-pointer">
+          <li class=" text-xs text-slate-200 hover:text-orange-600 "> ARTISTAS</li>
+          <li class=" text-xs text-slate-200 hover:text-orange-600 "> LIBRO</li>
+          <li class=" text-xs text-slate-200 hover:text-orange-600 "> COLABORA </li>
+          <li class=" text-xs text-slate-200 hover:text-orange-600 "> NOSOTROS </li>
       </ul>
       <div class="mx-10 ">
-        <hr>
+          <hr>
       </div>
       <div class="flex justify-center items-center md:justify-between flex-col gap-6 md:gap-3 md:flex-row mx-10">
-        <div class="flex flex-col items-center gap-3">
-          <img src="./src/assets/logo.png" alt="logo" class="w-24 rounded-full ">
-          <p class="text-xs text-slate-200 font-bold text-center">ART COLLAB</p>
-        </div>
-        <div class="w-1/2">
-          <p class="text-slate-200 leading-4 "> Un proyecto hecho por artistas, para artistas. Colabora y crea nuevos
-            proyectos
-            y transforma tu hobby en un trabajo o revisa nuestro amplio catálogo de libros y de artistas.</p>
-        </div>
-        <div class="terms-conditions flex gap-5">
-          <p class="text-slate-200 leading-4"> Políticas de Privacidad </p>
-          <p class="text-slate-200 leading-4"> Términos de uso</p>
-        </div>
-
-        <div class="socials flex gap-10">
-          <i class="fa fa-instagram text-white text-2xl md:pr-5" aria-hidden="true"></i>
-          <i class="fa fa-facebook text-white text-2xl md:pr-4" aria-hidden="true"></i>
-          <i class="fa fa-twitter text-white text-2xl md:pr-5" aria-hidden="true"></i>
-        </div>
+          <div class="flex flex-col items-center gap-3">
+              <img src="./src/assets/logo.png" alt="logo" class="w-24 rounded-full hover:cursor-pointer hover:scale-110 ">
+              <p class="text-xs text-slate-200 font-bold text-center">ART COLLAB</p>
+          </div>
+          <div class="w-1/2">
+              <p class="text-slate-200 leading-4 "> Un proyecto hecho por artistas, para artistas. Colabora y crea nuevos proyectos
+                  y transforma tu hobby en un trabajo o revisa nuestro amplio catálogo de libros y de artistas.</p>
+          </div>
+          <div class="terms-conditions flex gap-5">
+              <p class="text-slate-200 leading-4"> Políticas de Privacidad </p>
+              <p class="text-slate-200 leading-4"> Términos de uso</p>
+          </div>
+  
+          <div class="socials flex gap-10">
+              <i class="fa fa-instagram text-white text-2xl md:pr-5" aria-hidden="true"></i>
+              <i class="fa fa-facebook text-white text-2xl md:pr-4" aria-hidden="true"></i>
+              <i class="fa fa-twitter text-white text-2xl md:pr-5" aria-hidden="true"></i>
+          </div>
       </div>
-
-    </footer>
+  
+  </footer>
+    
 </body>
-
 </html>

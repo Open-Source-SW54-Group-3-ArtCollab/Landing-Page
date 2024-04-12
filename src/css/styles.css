@@ -1,6 +1,7 @@
-.books {
-  padding: 50px 0 150px 0;
-  ;
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 :root{
@@ -11,8 +12,6 @@ html,body{
     background-image: url("../assets/Hero-background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    width: auto;
-    height: 100vh;
 
 }
 
@@ -25,6 +24,13 @@ button{
   animation:  var(--transition-delay) pulse infinite;
 }
 
+.login-body{
+  height: 100vh;
+}
+
+
+
+
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -34,6 +40,45 @@ button{
   }
   100% {
     transform: scale(1);
+  }
+}
+
+
+
+.books{
+  padding: 50px 0 150px 0;;
+}
+.swiper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide{
+ background-position: center;
+ background-size: cover;
+ width: 280px;
+}
+.swiper-slide img{
+  display: block;
+  width: 100%;
+}
+
+.hero-container {
+  height:52vh;
+}
+@media(max-width: 991px){
+  body{
+      min-height: 0vh;
+  }
+  .books{
+      padding: 30px;
+  }
+
+}
+
+@media (width<=768px){
+  .hero-container {
+    height:40vh;
   }
 }
 
